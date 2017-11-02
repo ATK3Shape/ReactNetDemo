@@ -126,7 +126,7 @@ var CommentForm = React.createClass({
       );
     }
 });
-ReactDOM.render(
-  <CommentBox url="/comments" submitUrl="/comments/new" pollInterval={2000} />,
-  document.getElementById('content')
-);
+//ReactDOM.render(
+//  <CommentBox url="/comments" submitUrl="/comments/new" pollInterval={2000} />,
+//  document.getElementById('content')
+//);
