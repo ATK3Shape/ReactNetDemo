@@ -390,9 +390,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Scripts\client.js" />
+    <Content Include="Scripts\components\index.js" />
+    <Content Include="Scripts\server.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="webpack.config.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\ReactConfig.cs" />
@@ -410,7 +414,12 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Scripts\Tutorial.jsx" />
+    <Content Include="package.json" />
+    <Content Include=".babelrc" />
+    <Content Include="Scripts\components\CommentForm.jsx" />
+    <Content Include="Scripts\components\CommentList.jsx" />
+    <Content Include="Scripts\components\Comment.jsx" />
+    <Content Include="Scripts\components\CommentBox.jsx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -420,6 +429,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Build\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

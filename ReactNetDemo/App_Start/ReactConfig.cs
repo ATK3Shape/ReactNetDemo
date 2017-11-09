@@ -16,6 +16,9 @@ namespace ReactNetDemo
             //	.AddScript("~/Scripts/First.jsx")
             //	.AddScript("~/Scripts/Second.jsx");
 
+            //ReactSiteConfiguration.Configuration = new ReactSiteConfiguration()
+            //    .AddScript("~/Scripts/Tutorial.jsx");
+
             // If you use an external build too (for example, Babel, Webpack,
             // Browserify or Gulp), you can improve performance by disabling 
             // ReactJS.NET's version of Babel and loading the pre-transpiled 
@@ -24,8 +27,10 @@ namespace ReactNetDemo
             //	.SetLoadBabel(false)
             //	.AddScriptWithoutTransform("~/Scripts/bundle.server.js")
 
-            ReactSiteConfiguration.Configuration = new ReactSiteConfiguration()
-                .AddScript("~/Scripts/Tutorial.jsx");
+            ReactSiteConfiguration.Configuration
+                .SetLoadBabel(false)
+                .AddScriptWithoutTransform("~/Build/bundle.server.js");
+
         }
-	}
+    }
 }
