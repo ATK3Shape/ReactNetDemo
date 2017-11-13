@@ -14,7 +14,7 @@ It is based on tutorial https://reactjs.net/getting-started/tutorial_aspnet4.htm
 
 **Build and start project**
 1. Run `SET NODE_ENV=development&& webpack --color` from command line OR run command from Task Runner Explorer
-2. Run F5
+2. Run `F5`
 
 **Branches**
 master - most up-to-date code
