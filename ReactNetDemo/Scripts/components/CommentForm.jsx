@@ -1,4 +1,5 @@
-﻿const React = require('react');
+﻿//const React = require('react');
+import React from 'react';
 
 class CommentForm extends React.Component {
     constructor(props) {

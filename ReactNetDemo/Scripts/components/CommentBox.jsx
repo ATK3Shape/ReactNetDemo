@@ -1,6 +1,10 @@
-﻿const React = require('react');
-const CommentList = require('./CommentList');
-const CommentForm = require('./CommentForm');
+﻿//const React = require('react');
+//const CommentList = require('./CommentList');
+//const CommentForm = require('./CommentForm');
+
+import React from 'react';
+import CommentList from './CommentList';
+import CommentForm from './CommentForm';
 
 class CommentBox extends React.Component {
     constructor(props) {

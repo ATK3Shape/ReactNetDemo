@@ -1,5 +1,8 @@
-﻿const React = require('react');
-const Comment = require('./Comment');
+﻿//const React = require('react');
+//const Comment = require('./Comment');
+
+import React from 'react';
+import Comment from './Comment';
 
 class CommentList extends React.Component {
     constructor(props) {
