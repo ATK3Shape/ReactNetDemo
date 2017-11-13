@@ -1,18 +1,19 @@
 # ReactNetDemo
-Demo project React + .NET
 
-.NET project created basing on tutorial https://reactjs.net/getting-started/tutorial_aspnet4.html 
+**Description**
 
-**Chosen:**
-ASP.NET MVC 4 Web Application
-Empty project + MVC (checkbox)
+This is Demo/POC project for testing React on ASP.NET, server-side rendering and front-end setup that we might use on eCommerce project.
+It is based on tutorial https://reactjs.net/getting-started/tutorial_aspnet4.html
 
-Add React NuGet package to project
-React NuGet package used - React.Web.Mvc4. (Visual Studio 2015, .NET framework 4.6.1)
-For simple example (like on ) this package is enough.
-Branch - _ReactNet-tutorial-example_
 
-To be able to use server-side rendering - install React.AspNet NuGet package as well.
-Branch - _ReactNet-tutorial-example-serverside-rendering_
+**Installation**
+1. Pull master branch to your local environment.
+2. You will need restore NuGet packages
+3. Run npm install from console.
+4. To be able to run webpack build (not from command line), you will need extension WebPack Task Runner - [Link](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebPackTaskRunner)
 
-To test client- or server-side rendering is working now - turn off javascript for browser. In case of client-side rendering markup will not contain all HTML (no React components HTML).
+**Build and start project**
+1. Run `SET NODE_ENV=development&& webpack --color` from command line OR run command from Task Runner Explorer
+2. Run F5
+
+
