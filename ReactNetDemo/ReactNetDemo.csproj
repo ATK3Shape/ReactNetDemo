@@ -393,6 +393,7 @@
     <Content Include="Scripts\client.js" />
     <Content Include="Scripts\components\index.js" />
     <Content Include="Scripts\server.js" />
+    <Content Include="Views\Basket\Index.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -401,7 +402,9 @@
   <ItemGroup>
     <Compile Include="App_Start\ReactConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BasketController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -420,6 +423,9 @@
     <Content Include="Scripts\components\CommentList.jsx" />
     <Content Include="Scripts\components\Comment.jsx" />
     <Content Include="Scripts\components\CommentBox.jsx" />
+    <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\Sidebar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -442,7 +448,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50610</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
